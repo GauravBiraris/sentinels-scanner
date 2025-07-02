@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: sentinels-scanner
+    env: node
+    buildCommand: npm install
+    startCommand: vite --host --port 8000
+    repo: https://github.com/GauravBiraris/sentinels-scanner
+    branch: main
+    rootDir: .
+    numInstances: 1
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
