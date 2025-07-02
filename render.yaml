@@ -3,7 +3,7 @@ services:
     name: sentinels-scanner
     env: node
     buildCommand: npm install
-    sstartCommand: npm start
+    startCommand: npm start
     repo: https://github.com/GauravBiraris/sentinels-scanner
     branch: main
     rootDir: .
