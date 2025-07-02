@@ -3,7 +3,7 @@ services:
     name: sentinels-scanner
     env: node
     buildCommand: npm install
-    startCommand: vite --host --port 8000
+    sstartCommand: npm start
     repo: https://github.com/GauravBiraris/sentinels-scanner
     branch: main
     rootDir: .
