@@ -17,11 +17,14 @@
     "xmldom": "^0.6.0"
   },
   "scripts": {
-    "start": "cross-env NODE_OPTIONS=--max-old-space-size=4096 HOST=0.0.0.0 PORT=8000 react-scripts start",
+    "start": "start": "cross-env NODE_OPTIONS=--max-old-space-size=4096 HOST=0.0.0.0 PORT=8000 BROWSER=none react-scripts start",
+    "start": "cross-env HOST=0.0.0.0 PORT=8000 BROWSER=none react-scripts start"
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:8000",
+  
   "eslintConfig": {
     "extends": [
       "react-app",
